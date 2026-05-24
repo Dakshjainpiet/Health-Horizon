@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Horizon-Appointments</title>
+    <link rel="shortcut icon" href="https://assets-global.website-files.com/64a2ab71942e1d57feb6fe39/6528221f95333ff155d01ad2_fav.gif" type="image/x-icon">
+    <link rel="stylesheet" href="appointment.css">
+    <script src="../backend/index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+          
+          <form   action="http://localhost:8080/appointments" method="POST">
+            <div class="box">
+              <label for="name" class="label"> Full Name </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                class="formbold-form-input"
+              />
+            </div>
+            <div class="box">
+              <label for="phone" class="label"> Phone Number </label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+                class="formbold-form-input"
+              />
+            </div>
+            <div class="box">
+              <label for="email" class="label"> Email Address </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                class="formbold-form-input"
+              />
+            </div>
+            <div class="flex flex-wrap formbold--mx-3">
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5 w-full">
+                  <label for="date" class="label"> Date </label>
+                  <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="box">
+                  <label for="time" class="label"> Time </label>
+                  <input
+                    type="time"
+                    name="time"
+                    id="time"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+            </div>
+      
+            <div class="formbold-mb-5 formbold-pt-3">
+              <label class="label label-2">
+                Address Details
+              </label>
+              <div class="flex flex-wrap formbold--mx-3">
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="box">
+                    <input
+                      type="text"
+                      name="area"
+                      id="area"
+                      placeholder="Enter area"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="box">
+                    <input
+                      type="text"
+                      name="city"
+                      id="city"
+                      placeholder="Enter city"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="box">
+                    <input
+                      type="text"
+                      name="state"
+                      id="state"
+                      placeholder="Enter state"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="box">
+                    <input
+                      type="text"
+                      name="post-code"
+                      id="post-code"
+                      placeholder="Post Code"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div>
+              <!-- <a class="formbold-btn" href="payment.html">Book Appointment</a> -->
+              <!-- <a class="formbold-btn" >Book Appointment</a> -->
+              <button class="formbold-btn" href="payment.html"> Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
